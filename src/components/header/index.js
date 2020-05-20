@@ -3,13 +3,13 @@ import Switch from "react-switch";
 import { ThemeContext } from "styled-components";
 import { shade } from "polished";
 
-import { Container } from "./styles.js";
+import { Container, HeaderTitle } from "./styles.js";
 
 const Header = ({ toogleTheme }) => {
   const { colors, title } = useContext(ThemeContext);
   return (
     <Container>
-      Hello Word !!!
+      <HeaderTitle>Hello Word !!!</HeaderTitle>
       <Switch
         onChange={toogleTheme}
         checked={title === "dark"}
